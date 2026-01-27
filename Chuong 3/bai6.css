@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+body {
+    background-color: yellow;
+}
+p {
+    font-family: Verdana;
+    color: green;
+}
+ol li{
+    font-family: Verdana;
+    color: purple;
+}
+ul li{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.hv {
+    list-style-type: square;
+}
+.ht {
+    list-style-type: circle;
+    font-style: italic;
+}
