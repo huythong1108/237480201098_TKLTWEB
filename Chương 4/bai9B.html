@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var SoLuong, X;
+        var DS = new Array(100);
+        SoLuong = prompt("Bạn cần nhập bao nhiêu thiết bị văn phòng: ", 5);
+        for (i=0;i< SoLuong;i++){
+            DS[i] = prompt("Nhập vào tên thiết bị văn phòng: ", "");
+        }
+        document.write("<h1>Danh sách thiết bị văn phòng </h1>");
+        for (x in DS){
+            document.write(DS[x]);
+            document.write("<BR>");
+        }
+        document.write("<h1>Danh sách thiết bị có tên là 'computer'</h1>");
+        for (x in DS){
+            if (DS[x] == "computer"){
+                document.write(DS[x]);
+                document.write("<BR>");
+            }
+        }
+    </script>
+</body>
+</html>
