@@ -3,6 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .khung{
+            border-style: solid;
+            text-align: center;
+            border-radius: 30px;
+            width: 400px;
+            height: 250px;
+            margin: auto;
+        }
+        .trai{
+            text-align: left;
+            margin-left: 20px;
+        }
+        .nut input{
+            height: 30px;
+            width: 60px;
+            display: inline;
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -24,20 +43,23 @@
         $kq = $_POST['a'] % $_POST['b'];
     ?>
 
-    <form method="post">j
-    <h2>TÍNH TOÁN SỐ HỌC</h2>
-
-    Số thứ 1: <input type="text" name="a"><br><br>
-    Số thứ 2: <input type="text" name="b"><br><br>
-
-    Kết quả: <input type="text" value="<?php echo $kq; ?>"><br><br>
-
-    <input type="submit" name="cong" value="Cộng">
-    <input type="submit" name="tru" value="Trừ">
-    <input type="submit" name="nhan" value="Nhân">
-    <input type="submit" name="chia" value="Chia">
-    <input type="submit" name="mod" value="Mod">
-
+    <form method="post">
+        <div class="khung">
+            <h2>TÍNH TOÁN SỐ HỌC</h2>
+            <hr>
+            <div class="trai">
+                Số thứ 1: <input type="text" name="a"><br><br>
+                Số thứ 2: <input type="text" name="b"><br><br>
+                Kết quả: <input type="text" value="<?php echo $kq; ?>"><br><br>
+            </div>
+            <div class="nut">
+                <input type="submit" name="cong" value="Cộng">
+                <input type="submit" name="tru" value="Trừ">
+                <input type="submit" name="nhan" value="Nhân">
+                <input type="submit" name="chia" value="Chia">
+                <input type="submit" name="mod" value="Mod">
+            </div>
+        </div>
     </form>
 </body>
 </html>
