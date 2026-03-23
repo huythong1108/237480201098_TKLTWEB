@@ -1,0 +1,4 @@
+
+câu 7:
+SELECT * FROM HANGHOA 
+WHERE mansx = (SELECT mansx FROM NHASANXUAT WHERE tennsx = 'DELL');

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function TinhTien() {
+            let soLuong = document.getElementById("SoLuong").value;
+            let donGia = document.getElementById("DonGia").value;
+
+            let thanhTien = soLuong * donGia;
+
+            document.getElementById("ThanhTien").value = thanhTien;
+        }
+    </script>
+</head>
+<body>
+    <h1>Bạn hãy nhập vào số lượng và giá:</h1>
+
+    Số lượng:
+    <input id="SoLuong" onkeyup="TinhTien();">
+
+    Đơn giá:
+    <input id="DonGia" onkeyup="TinhTien();">
+    <hr>
+
+    Thành tiền:
+    <input id="ThanhTien" readonly> USD
+</body>
+</html>
