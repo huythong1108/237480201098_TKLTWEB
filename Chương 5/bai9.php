@@ -7,7 +7,7 @@
 <body>
     <h3>Bảng cửu chương</h3>
 
-    <table border="1" cellpadding="10">
+    <table cellpadding="10">
 
     <?php
     for($i = 1; $i <= 10; $i++){

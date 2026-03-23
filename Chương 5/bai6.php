@@ -7,7 +7,7 @@
 <body>
     <h3>Bảng n và n²</h3>
 
-    <table border="1" cellpadding="5">
+    <table border="1">
     <tr>
         <th>Số n</th>
         <th>Số n²</th>

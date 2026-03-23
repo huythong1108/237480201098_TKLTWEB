@@ -9,9 +9,9 @@
     <select name="year">
 
     <?php
-    $currentYear = date("Y");
+    $namhientai = date("Y");
 
-    for($y = 1900; $y <= $currentYear; $y++){
+    for($y = 1900; $y <= $namhientai; $y++){
         echo "<option>$y</option>";
     }
     ?>
