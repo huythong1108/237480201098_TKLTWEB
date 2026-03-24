@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .khung{
+            border:2px solid black;
+            border-radius: 15px;
+            height: 200px;
+            width: 400px;
+            margin: auto;
+        }
+        h2{
+            margin: 10px;
+            text-align: center;
+        }
+        .thongtin label{
+            width: 80px;
+            margin-left: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        button{
+            margin-left: 105px;
+            margin-top: 5px;
+            width: 168px;
+            background-color: bisque;
+            border-radius: 5px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="khung">
+        <h2>TRANG ĐĂNG NHẬP</h2><hr>
+        <form action="login.php" method="post">
+            <div class="thongtin">
+                <label for="">Username: </label>
+                <input type="text" name="username" required><br>
+                <label for="">Email: </label>
+                <input type="email" name="email" required><br>
+                <label for="">Password: </label>
+                <input type="password" name="password" required><br>
+            </div>
+            <button type="submit" name="btnLogin">Login</button>
+        </form>
+    </div>
+</body>
+</html>
